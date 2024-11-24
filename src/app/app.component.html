@@ -1,0 +1,25 @@
+
+<app-header/>
+<main>
+  <div id="dashboard">
+    <div class="dashboard-item">
+      <app-dashboard-item [image]="{ src: 'status.png', alt: 'A signal symbol'}" tilte="Server Status">
+        <app-server-status/>
+     </app-dashboard-item>
+    </div>
+    
+    <div class="dashboard-item">
+      <app-dashboard-item [image]="{ src: 'globe.png', alt: 'A globe'}" tilte="Traffic">
+        <app-trafic/>
+     </app-dashboard-item>
+    
+    </div>
+
+    <div class="dashboard-item">
+      <app-dashboard-item [image]="{ src: 'list.png', alt: 'A list of items'}" tilte="Support Tickets">
+        <app-tickets/>
+     </app-dashboard-item>
+     
+    </div>
+  </div>
+</main>
